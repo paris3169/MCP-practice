@@ -1,13 +1,13 @@
 # --- CONFIGURATION (Update these paths) ---
-$PYTHON_EXE = "C:/Users/EPARDET/weather-mcp-server/venv/Scripts/python.exe"
-$SERVER_PY = "C:/Users/EPARDET/weather-mcp-server/venv/test_mcp_cloud.py"
+$PYTHON_EXE = "full local path to yiur local python.exe"
+$SERVER_PY = "full local path to the mcp server python script test_mcp_cloud.py"
 
 # --- CREDENTIALS ---
-$TOKEN = "dapi38407e8c74a1cda6151e1decdb035d5d"
-$HOSTNAME= "dbc-94075d17-c048.cloud.databricks.com"
-$PATH = "/sql/1.0/warehouses/1519f7c7bfd6bf44"
-$CATALOG = "ecommerce_course"
-$SCHEMA = "silver"
+$TOKEN = "put your API token here"
+$HOSTNAME= "put your databricks host name here"
+$PATH = "/sql/1.0/warehouses/your path"
+$CATALOG = "catalogue_name"
+$SCHEMA = "schema_name"
 
 # --- EXECUTION ---
 # Using the -e flag ensures the variables are injected directly into the child process
@@ -18,4 +18,5 @@ npx @modelcontextprotocol/inspector `
     -e DATABRICKS_CATALOG=$CATALOG `
     -e DATABRICKS_SCHEMA=$SCHEMA `
     $PYTHON_EXE $SERVER_PY
+
     
