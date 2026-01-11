@@ -1,0 +1,14 @@
+numpy
+pandas
+matplotlib
+seaborn
+langchain
+langchain-openai
+langchain-mcp-adapter
+langgraph
+mcp
+fastmcp
+sqlalchemy
+databricks-sql-connector
+sqlalchemy-databricks
+pypdf
